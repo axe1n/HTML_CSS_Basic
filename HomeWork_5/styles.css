@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.top {
+    height: 768px;
+    background: linear-gradient(0deg, #EBF3FB 8.84%,
+            rgba(152, 195, 232, 0) 31.12%);
+}
+
+.top_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.top__info {
+    padding-top: 115px;
+    flex-grow: 1;
+    background: url(img/top_background.png) no-repeat right;
+}
+
+.top_heading {
+    width: 510px;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+
+}
+
+.top_text {
+    width: 425px;
+    margin-top: 32px;
+}
+
+.top_button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px 50px;
+    display: inline-block;
+    margin-top: 71px;
+}
+
+.contacts__header-2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+
+.heading {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.mini_heading {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+}
+
+.mini_heading_card {
+    margin-bottom: 14px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+
+.user-data-input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+}
+
+.button-submit {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 42px;
+}
+
+.what-we-do {
+    margin-top: 64px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 64px;
+}
+
+.card {
+    width: 359px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.work_with_us {
+    width: 340px;
+}
+
+.footer p {
+    width: 495px;
+}
+
+.footer .our_contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Стили раздела Контакты */
+
+.our_connections {
+    display: flex;
+    justify-content: space-between;
+}
