@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -41,7 +41,6 @@ body {
     line-height: 74px;
     letter-spacing: 0.04em;
     color: #1F3F68;
-
 }
 
 .top_text {
@@ -87,7 +86,16 @@ body {
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #1F3F68;
-}   
+    margin-bottom: 14px;
+}
+
+.footer-heading {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
 
 .text {
     font-weight: 400;
@@ -98,6 +106,25 @@ body {
     opacity: 0.6;
 }
 
+.project__text {
+    width: 75%;
+    text-align: center;
+    color: #222222;
+    opacity: 1;
+    margin: 32px auto 64px;
+}
+
+.footer-text {
+    width: 495px;
+    color: #FFFFFF;
+    margin-top: 32px;
+    margin-bottom: 96px;
+}
+
+.all_rights_reserved {
+    color: #FFFFFF;
+    opacity: 0.4;
+}
 
 .user-data-input {
     border: 1px solid #356EAD;
@@ -151,30 +178,132 @@ body {
 }
 
 .card__link {
+    display: flex;
     font-weight: 400;
     font-size: 14px;
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #5A98D0;
     text-decoration: none;
+    margin-top: 30px;
 }
 
-.work_with_us {
-    width: 340px;
+.arrow {
+    margin-left: 24px;
 }
 
-.footer p {
-    width: 495px;
+
+.project {
+    margin-top: 64px;
 }
 
-.footer .our_contacts {
+.project__items-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 112px;
+}
+
+.project__item {
+    position: relative;
+    flex-grow: 1;
+}
+
+.project__item-2_margin {
+    margin-right: 32px;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__img-1-text {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+    z-index: 1;
+}
+
+.project__img-2-text {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    z-index: 1;
+}
+
+.footer {
+    background: #316099;
+}
+
+.footer__top {
+    margin-left: 113px;
+    margin-right: 113px;
     display: flex;
     justify-content: space-between;
 }
 
+.work_with_us {
+    width: 340px;
+    margin-top: 91px;
+}
+
+.footer_button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    text-decoration: none;
+    padding: 15px 80px;
+    display: inline-block;
+    margin-top: 165px;
+}
+
+.footer__bottom {
+    border-top: 1px solid rgb(255, 255, 255, 0.4);
+    padding: 64px 113px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.contacts a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.contacts li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    list-style-position: inside;
+}
+
 /* Стили раздела Контакты */
 
-.our_connections {
+.connections {
     display: flex;
     justify-content: space-between;
 }
