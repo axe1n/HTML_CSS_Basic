@@ -64,10 +64,21 @@ body {
   margin-bottom: 190px;
 }
 
-.contacts__header-2 {
+.contacts__heading {
   font-weight: 500;
   font-size: 44px;
+  line-height: 74px;
   text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.contacts_mini_heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
 }
 
 .heading {
@@ -118,6 +129,24 @@ body {
   color: #FFFFFF;
   margin-top: 32px;
   margin-bottom: 96px;
+}
+
+.contacts_text {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
+  opacity: 1;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.adress-text {
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  margin-top: 24px;
+  margin-bottom: 40px;
 }
 
 .all_rights_reserved {
@@ -297,17 +326,48 @@ body {
 }
 
 /* Стили раздела Контакты */
-.contacts_top {
-  margin-bottom: 55px;
-}
-
 .contact_us {
   background: url(img/contacts_background.png);
 }
 
-.connections {
+.contact-us__wrap {
+  padding: 50px 0;
+}
+
+.contacts_text_margin {
+  margin-top: 16px;
+}
+
+.our_connections {
+  padding: 60px 100px 100px;
   display: flex;
   justify-content: space-between;
+}
+
+.contacts-img {
+  margin-bottom: 56px;
+}
+
+.connection {
+  width: 300px;
+}
+
+.phone-list {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+.phone-list li {
+  margin-bottom: 16px;
+}
+
+.phone-list li::before {
+  content: url(img/phone-marker.svg);
+}
+
+.phone-list li a {
+  text-decoration: none;
 }
 
 /* Адаптив для планшета */
@@ -323,7 +383,7 @@ body {
   }
 
   .top__info {
-    background: url(img/top_background.png) no-repeat 360px 290px/50%;
+    background: url(../HomeWork/img/top_background.png) no-repeat 360px 290px/50%;
   }
 
   .card-box {
