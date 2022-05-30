@@ -17,7 +17,7 @@ body {
 }
 
 .top {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%,
             rgba(152, 195, 232, 0) 31.12%);
 }
@@ -26,12 +26,13 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-top: 42px;
 }
 
 .top__info {
     padding-top: 115px;
     flex-grow: 1;
-    background: url(img/top_background.png) no-repeat right;
+    background: url(img/top_background.png) no-repeat right/ 50%;
 }
 
 .top_heading {
@@ -46,6 +47,7 @@ body {
 .top_text {
     width: 425px;
     margin-top: 32px;
+    margin-bottom: 71px;
 }
 
 .top_button {
@@ -61,7 +63,7 @@ body {
     text-decoration: none;
     padding: 15px 50px;
     display: inline-block;
-    margin-top: 71px;
+    margin-bottom: 190px;
 }
 
 .contacts__header-2 {
@@ -145,15 +147,15 @@ body {
     text-transform: uppercase;
 }
 
+.content {
+    margin-top: 64px;
+    margin-bottom: 112px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin-top: 42px;
-}
-
-.what-we-do {
-    margin-top: 64px;
 }
 
 .card-box {
@@ -201,7 +203,6 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
-    margin-bottom: 112px;
 }
 
 .project__item {
@@ -247,8 +248,6 @@ body {
 }
 
 .footer__top {
-    margin-left: 113px;
-    margin-right: 113px;
     display: flex;
     justify-content: space-between;
 }
@@ -306,4 +305,202 @@ body {
 .connections {
     display: flex;
     justify-content: space-between;
+}
+
+/* Адаптив для планшета */
+@media (max-width: 1024px) {
+    .container {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .footer__container {
+        margin-left: 124px;
+        margin-right: 124px;
+    }
+
+    .top__info {
+        background: url(img/top_background.png) no-repeat 360px 290px/ 50%;
+    }
+
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 32px;
+    }
+
+    .work_with_us {
+        margin-top: 47px;
+    }
+
+    .footer-text {
+        max-width: 340px;
+        margin-bottom: 64px;
+    }
+
+    .footer_button {
+        padding: 4px 30px;
+        margin-top: 173px;
+    }
+
+    .footer__bottom {
+        padding: 64px 0;
+    }
+
+
+    .contacts {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .contacts li {
+        margin-bottom: 25px;
+    }
+
+    .all_rights_reserved {
+        margin-top: 32px;
+    }
+}
+
+/* Адаптив для телефона */
+@media (max-width: 667px) {
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .content {
+        margin-bottom: 64px;
+    }
+
+    .top {
+        min-height: 376px;
+        background: linear-gradient(0deg, #DAEAF7 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    }
+
+    .top_wrapper {
+        display: block;
+        padding-top: 24px;
+    }
+
+    .top__info {
+        padding-top: 36px;
+        background-image: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        text-align: center;
+    }
+
+    .project__text {
+        width: 100%;
+        margin: 32px auto 64px;
+    }
+
+
+    .top_heading {
+        width: 100%;
+        font-size: 32px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .top_text {
+        width: 100%;
+        margin-top: 12px;
+        margin-bottom: 32px;
+    }
+
+    .top_button {
+        font-size: 12px;
+        line-height: 12px;
+        padding: 8px 13px;
+        margin-bottom: 41px;
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: normal;
+    }
+
+    .project__img-1-text {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: normal;
+        top: 16px;
+        right: 16px;
+    }
+
+    .project__items-box {
+        flex-direction: column;
+        margin-top: 16px;
+        margin-bottom: 64px;
+
+    }
+
+    .project__item-2_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .project__img-2-text {
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: normal;
+        top: 16px;
+        left: 16px;
+    }
+
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work_with_us {
+        width: 340px;
+        margin-top: 18px;
+    }
+
+    .footer-heading {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: normal;
+        text-align: center;
+    }
+
+    .footer-text {
+        margin-top: 32px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .footer_button {
+        background: #5A98D0;
+        text-decoration: none;
+        padding: 9px 20px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .footer__bottom {
+        padding: 32px 0;
+    }
+
+    .contacts li {
+        margin-bottom: 18px;
+    }
+
+    .all_rights_reserved {
+        margin-top: 18px;
+    }
+
+
+
 }
