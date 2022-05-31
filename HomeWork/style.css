@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -142,6 +143,15 @@ body {
   margin: 0 auto;
 }
 
+.message-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  opacity: 0.8;
+}
+
 .adress-text {
   font-weight: 300;
   letter-spacing: 0.04em;
@@ -155,10 +165,38 @@ body {
 }
 
 .user-data-input {
-  border: 1px solid #356EAD;
-  box-sizing: border-box;
-  border-radius: 10px;
   opacity: 0.4;
+  border: 1px solid #356EAD;
+  border-radius: 10px;
+  height: 72px;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+
+.user-data-input::placeholder {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  opacity: 0.2;
+}
+
+.messageTextarea {
+  height: 144px;
+}
+
+.messageTextarea::placeholder {
+  padding-top: 21px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  opacity: 0.2;
 }
 
 .button-submit {
@@ -173,9 +211,24 @@ body {
   text-transform: uppercase;
 }
 
+.contacts_button {
+  display: block;
+  background: #5A98D0;
+  box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
 .content {
   margin-top: 64px;
-  margin-bottom: 112px;
 }
 
 .header {
@@ -327,7 +380,8 @@ body {
 
 /* Стили раздела Контакты */
 .contact_us {
-  background: url(img/contacts_background.png);
+  background: url(img/contacts_background.png) no-repeat center;
+
 }
 
 .contact-us__wrap {
@@ -339,35 +393,88 @@ body {
 }
 
 .our_connections {
-  padding: 60px 100px 100px;
+  padding: 60px 100px 0;
   display: flex;
   justify-content: space-between;
 }
 
 .contacts-img {
-  margin-bottom: 56px;
+  margin-top: 60px;
+  margin-bottom: 60x;
 }
 
 .connection {
   width: 300px;
 }
 
-.phone-list {
+.list {
   margin-top: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
   list-style: none;
 }
 
-.phone-list li {
+.list li {
   margin-bottom: 16px;
+  display: flex;
 }
 
-.phone-list li::before {
-  content: url(img/phone-marker.svg);
+.phone-icon::before {
+  content: url(img/icon-phone.svg);
+  margin-right: 19px;
 }
 
-.phone-list li a {
+.site-icon::before {
+  content: url(img/icon-site.svg);
+  margin-right: 19px;
+}
+
+.mail-icon::before {
+  content: url(img/icon-mail.svg);
+  margin-right: 19px;
+}
+
+.list li a {
   text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+}
+
+.send_us_message {
+  width: 540px;
+  background: #FFFFFF;
+  box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+  border-radius: 10px;
+  padding: 56px;
+
+}
+
+.form {
+  margin-top: 50px;
+}
+
+.form span {
+  display: block;
+}
+
+.fullName {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #1F3F68;
+  opacity: 0.8;
+}
+
+.map {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 96px;
+  margin-bottom: 112px;
 }
 
 /* Адаптив для планшета */
@@ -425,16 +532,31 @@ body {
   .all_rights_reserved {
     margin-top: 32px;
   }
+
+  /* Стили раздела Контакты для планшета */
+  .our_connections {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+  }
+
+  .send_us_message {
+    max-width: 520px;
+  }
+
+  .map {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 64px;
+    margin-bottom: 64px;
+  }
 }
+
 /* Адаптив для телефона */
 @media (max-width: 667px) {
   .container {
     margin-left: 16px;
     margin-right: 16px;
-  }
-
-  .content {
-    margin-bottom: 64px;
   }
 
   .top {
@@ -558,5 +680,70 @@ body {
 
   .all_rights_reserved {
     margin-top: 18px;
+  }
+
+  /* Стили раздела Контакты для мобильного телефона */
+
+  .content {
+    margin-top: 32px;
+  }
+
+  .contacts__heading {
+    font-size: 24px;
+    line-height: 28px;
+
+  }
+
+  .contacts_text_margin {
+    margin-top: 32px;
+  }
+
+  .our_connections {
+    padding-top: 50px;
+  }
+
+  .contacts_mini_heading {
+    font-size: 16px;
+  }
+
+  .send_us_message {
+    max-width: 342px;
+    padding: 36px;
+  }
+
+  .form {
+    margin-top: 31px;
+  }
+
+  .user-data-input {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 46px;
+  }
+
+  .user-data-input::placeholder {
+    font-size: 14px;
+  }
+
+  .message-text {
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+
+  .messageTextarea {
+    height: 92px;
+  }
+
+  .messageTextarea::placeholder {
+    padding-top: 13px;
+    font-size: 14px;
+  }
+
+  .map {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
