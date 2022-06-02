@@ -281,6 +281,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
+  margin-bottom: 112px;
 }
 
 .project__item {
@@ -323,6 +324,10 @@ body {
 
 .footer {
   background: #316099;
+}
+
+.footer__container {
+  margin: 0 auto;
 }
 
 .footer__top {
@@ -443,7 +448,7 @@ body {
 }
 
 .send_us_message {
-  width: 540px;
+  min-width: 540px;
   background: #FFFFFF;
   box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
   border-radius: 10px;
@@ -541,7 +546,7 @@ body {
   }
 
   .send_us_message {
-    max-width: 520px;
+    min-width: 520px;
   }
 
   .map {
@@ -707,7 +712,7 @@ body {
   }
 
   .send_us_message {
-    max-width: 342px;
+    min-width: 342px;
     padding: 36px;
   }
 
